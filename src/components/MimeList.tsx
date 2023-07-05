@@ -44,21 +44,22 @@ function MimeList() {
         return (
           <>
             <Card key={key} p={5}>
-              <Image src={data.url} objectFit="cover" />
+              <Image src={data?.url} objectFit="cover" />
               <CardBody pl={0} pr={0}>
                 <HStack justify="space-between">
                   <VStack align="flex-start">
                     <Text as="b">
-                      {data.fileDimension.width} X {data.fileDimension.height}
+                      {data?.fileDimension?.width} X{" "}
+                      {data?.fileDimension?.height}
                     </Text>
                     <Text as="b">
                       File Size:
                       <Text as="i" fontWeight="400" color="green.500">
-                        {data.fileSize}/kb
+                        {data?.fileSize}/kb
                       </Text>
                     </Text>
                   </VStack>
-                  <Tag colorScheme="green">{data.fileType}</Tag>
+                  <Tag colorScheme="green">{data?.fileType}</Tag>
                 </HStack>
               </CardBody>
               <Divider />

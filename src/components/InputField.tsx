@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useContext, useState } from "react";
 import { MenuContext } from "../App";
 import axios from "axios";
+
 function InputField() {
   const { imagesData, setImagesData, setShowError, setShowLoader, showLoader } =
     useContext(MenuContext);
