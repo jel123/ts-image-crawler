@@ -67,7 +67,7 @@ function App() {
               CRAWL IMAGES
             </Heading>
             <Text fontSize="xl" color="gray.500">
-              Crawl images within any public browser
+              Crawl images within any public domain
             </Text>
           </Stack>
           <InputField />
